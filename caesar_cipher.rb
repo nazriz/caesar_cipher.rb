@@ -1,6 +1,6 @@
 def cipher(message,shift)
 
-  a_to_z_lower = ['a','b','c','d','e','f','g',
+  a_to_z_lower = [' ','a','b','c','d','e','f','g',
               'h','i','j','k','l','m','n',
               'o','p','q','r','s','t','u',
               'v','w','x','y','z']
@@ -21,10 +21,15 @@ end
 
 for index_num in index_array do
 
-scrambled_message = a_to_z_lower[index_num + 1]
-p scrambled_message
+if index_num == 0
+  scrambled_message = ' '
+else
+scrambled_message = a_to_z_lower[index_num + shift]
+end
+
+print scrambled_message
 end
 
 end
 
-cipher("hello",1)
+cipher("hello world",0)
