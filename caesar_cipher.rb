@@ -1,4 +1,3 @@
-
 def cipher(message,shift)
 
   a_to_z_lower = ['a','b','c','d','e','f','g',
@@ -13,12 +12,19 @@ def cipher(message,shift)
 
   message_array = message.chars       #splits the user input into an array
 
+index_array = []
+
 for letter in message_array do
-  scrambled_message = a_to_z_lower.find_index(letter)
-  p scrambled_message
+  index_array.push(a_to_z_lower.find_index(letter))
 end
 
 
+for index_num in index_array do
+
+scrambled_message = a_to_z_lower[index_num + 1]
+p scrambled_message
 end
 
-cipher("hello! guv?",1)
+end
+
+cipher("hello",1)
