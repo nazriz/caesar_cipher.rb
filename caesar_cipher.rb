@@ -52,32 +52,17 @@ end
 p scrambled_message
 end
 
-cipher("What a string!",5)
-#
-# for index_num in index_array do
-#
-# if index_num == 0
-#   scrambled_message = ' '
-# elsif index_num < 53
-#   scrambled_message = a_to_z[index_num + shift]
-# else
-# scrambled_message = a_to_z[index_num]
-# end
-#
-# print scrambled_message
-# end
-#
-# end
-#
-# puts "Ello luv, type ya message innit:"
-# print "> "
-# message = gets.chomp
-#
-# puts "And ow' much ya wanna scramble it?"
-# print "> "
-# scramble = gets.chomp.to_i
-#
-# puts "Orite, scrambling now...\n"
-# cipher(message,scramble)
-#
-# puts "There it is."
+
+
+puts "Ello luv, type ya message innit:"
+print "> "
+message = gets.chomp
+
+puts "And ow' much ya wanna scramble it?"
+print "> "
+scramble = gets.chomp.to_i
+
+puts "Orite, scrambling now...\n"
+cipher(message,scramble)
+
+puts "There it is."
