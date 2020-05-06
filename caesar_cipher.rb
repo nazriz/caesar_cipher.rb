@@ -42,4 +42,15 @@ end
 
 end
 
-cipher("Hello@ '?<>World!", 3)
+puts "Ello luv, type ya message innit:"
+print "> "
+message = gets.chomp
+
+puts "And ow' much ya wanna scramble it?"
+print "> "
+scramble = gets.chomp.to_i
+
+puts "Orite, scrambling now..."
+cipher(message,scramble)
+
+puts "There it is."
